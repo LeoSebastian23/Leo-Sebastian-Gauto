@@ -1,0 +1,73 @@
+.App {
+  text-align: center;
+}
+.gallery-item {
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery-item img {
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+.bg-custom {
+  background-color: #D63415; /* Color de fondo */
+}
+
+.footer-custom {
+  background-color: #D63415;
+  padding: 10px 0;
+}
+
+.footer-logo {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+  color: white;
+}
+
+.footer-menu ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.footer-menu ul li {
+  margin-bottom: 10px;
+}
+
+.footer-menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-legal {
+  margin-bottom: 10px;
+}
+
+.footer-legal a {
+  text-decoration: none;
+  color: white;
+  margin-right: 10px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-icon {
+  color: white;
+  font-size: 24px;
+  margin-left: 15px;
+}
+
+
