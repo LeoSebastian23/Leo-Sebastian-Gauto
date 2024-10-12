@@ -1,19 +1,43 @@
 .App {
   text-align: center;
 }
+.cover-image {
+  width: 100%; /* Asegúrate de que la imagen ocupe todo el ancho de su contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  object-fit: cover; /* Esto recorta la imagen si es necesario para llenar el contenedor sin distorsionarla */
+  max-height: 158px; /* O establece la altura máxima deseada */
+}
 .gallery-item {
   overflow: hidden;
   position: relative;
+  width: 100%;       
+  padding-top: 75%;
+  border: 3px solid white; /* Bordes blancos */
+  border-radius: 5px; /* Bordes redondeados (opcional) */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra leve */
+  transition: transform 0.3s; /* Efecto de transición al hacer hover */
 }
 
 .gallery-item img {
-  transition: transform 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Ajusta la imagen dentro del contenedor, recorta si es necesario */
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .gallery-item img:hover {
   transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
 }
+
+.gallery-item.selected {
+  border-color: #007bff; /* Color del borde cuando está seleccionada */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Sombra para destacar */
+}
+
 
 .bg-custom {
   background-color: #D63415; /* Color de fondo */

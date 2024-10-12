@@ -4,16 +4,17 @@ import { BsCamera, BsGeoAlt, BsImages, BsCalendar, BsStar, BsCart } from 'react-
 
 const UserProfileCard = () => {
   return (
-    <div className="my-4 d-flex justify-content-center">
-      <Card className="user-profile-card" style={{ width: '1270px' }}>
+    <div className="bg-light my-4 d-flex justify-content-center">
+      <Card className="user-profile-card" style={{ width: '99%' }} >
         {/* Imagen de portada */}
-        <Card.Img variant="top" src="https://via.placeholder.com/1270x158" className="cover-image" />
+        <Card.Img variant="top" src="/portada.jpg" className="cover-image" />
 
         {/* Imagen de perfil */}
         <div className="profile-picture d-flex justify-content-center">
           <img 
-            src="https://via.placeholder.com/112x112" 
+            src="/avatar.png" 
             className="rounded-circle border border-white"
+            alt='profile'
             style={{ width: '112px', height: '112px', position: 'relative', top: '-56px' }}
           />
         </div>
@@ -21,7 +22,7 @@ const UserProfileCard = () => {
         {/* Cuerpo de la tarjeta */}
         <Card.Body className="text-center">
           {/* Título */}
-          <Card.Title className="mb-4 mt-4">Expo Mascotas 2024</Card.Title>
+          <Card.Title className="mb-4">Expo Mascotas 2024</Card.Title>
 
           {/* Información del evento */}
           <div className="user-info">
