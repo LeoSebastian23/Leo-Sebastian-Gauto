@@ -43,55 +43,31 @@
   background-color: #D63415; /* Color de fondo */
 }
 
-.footer-custom {
-  background-color: #D63415;
-  padding: 10px 0;
+/*_--------------------------------------------------------------*/
+.user-profile-card .profile-picture {
+  margin-top: -50px; /* Ajusta la posición de la imagen de perfil */
 }
 
-.footer-logo {
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 30px;
-  text-align: center;
-  color: white;
+.user-profile-card .user-info {
+  margin-bottom: 15px; /* Reduce el espacio después de la info del usuario */
 }
 
-.footer-menu ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
+.user-profile-card .d-flex.justify-content-between {
+  padding: 0 20px; /* Ajusta el padding para que no queden tan dispersos */
 }
 
-.footer-menu ul li {
-  margin-bottom: 10px;
+.user-profile-card .add-all-btn {
+  background-color: #D63415; /* Color rojo personalizado */
+  border: none;
+  width: 180px; /* Ajusta el ancho del botón */
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.footer-menu ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
+.user-profile-card .add-all-btn:hover {
+  background-color: #b82610; /* Un tono más oscuro para el hover */
+  transform: scale(1.05); /* Un ligero efecto de aumento */
+  cursor: pointer;
 }
 
-.footer-legal {
-  margin-bottom: 10px;
-}
-
-.footer-legal a {
-  text-decoration: none;
-  color: white;
-  margin-right: 10px;
-}
-
-.footer-social {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.social-icon {
-  color: white;
-  font-size: 24px;
-  margin-left: 15px;
-}
 
 

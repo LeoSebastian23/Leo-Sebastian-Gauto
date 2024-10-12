@@ -2,7 +2,7 @@
 .brand-custom {
     background-color: #D63415; /* Fondo rojo */
     padding: 5px 10px;
-    color: white;
+    color: white !important;
     border-radius: 1px;
     font-weight: 600;
     text-transform: uppercase;

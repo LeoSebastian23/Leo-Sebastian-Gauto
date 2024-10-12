@@ -1,0 +1,51 @@
+.footer-custom {
+  background-color: #D63415;
+}
+
+.footer-logo {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  justify-items: flex-start;
+  text-align: start;
+  color: white;
+  padding-top:10px;
+  margin: 30px;
+}
+
+.footer-menu ul {
+  list-style: none;
+  margin: 10px;
+}
+
+.footer-menu ul li {
+  text-align: start;
+}
+
+.footer-menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-legal {
+  margin-bottom: 5px;
+}
+
+.footer-legal a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+}
+
+.social-icon {
+  color: white;
+  font-size: 24px;
+  margin-left: 15px;
+}
