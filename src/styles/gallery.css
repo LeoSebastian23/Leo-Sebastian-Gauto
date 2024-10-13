@@ -1,0 +1,65 @@
+.watermark {
+  background: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  pointer-events: none; /* Para que no interfiera con clics */
+}
+
+.gallery-item {
+  overflow: hidden;
+  position: relative;
+  width: 100%;       
+  padding-top: 75%;
+  border: 3px solid white;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.gallery-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item.selected {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.buy-icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px; /* Ajusta según el tamaño deseado */
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+  color: #333; /* Color del ícono */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  position: absolute;
+  top: 8px; /* Ajusta la posición para que coincida con la imagen */
+  right: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.buy-icon-button:hover {
+  background-color: #535353; /* Cambia el color al pasar el mouse */
+  color: rgb(255, 255, 255);
+}
+
+
+
