@@ -29,7 +29,7 @@ const Gallery = () => {
   return (
     <Container>
       <Row className="my-2 p-1 bg-light rounded">
-        <Col className="d-flex justify-content-between align-items-center">
+        <Col className="d-flex justify-content-between align-items-center bg-white rounded">
           <h6 className="m-2">Seleccionados {selectedCount}</h6>
           <SelectorGrid onChange={setColumns} />
         </Col>

@@ -1,0 +1,30 @@
+.selector-grid-container {
+    text-align: center;
+    width: 30%;
+  }
+
+  .custom-range-slider {
+    margin: 0 auto;
+    width: 80%; /* Ajusta el ancho del slider */
+  }
+  
+  .range-indicators {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+  }
+  
+  .range-indicators span {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #dc3545;
+    border-radius: 50% ;
+  }
+  
+  
+
+
+

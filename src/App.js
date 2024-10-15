@@ -1,6 +1,7 @@
 import "./styles/App.css";
 import "./styles/navbar.css";
 import "./styles/userProfileCard.css";
+import "./styles/SelectorGrid.css";
 import "./styles/gallery.css";
 import "./styles/footer.css";
 import Gallery from "./components/Gallery";

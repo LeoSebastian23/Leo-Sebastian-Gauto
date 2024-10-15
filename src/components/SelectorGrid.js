@@ -11,17 +11,24 @@ const SelectorGrid = ({ onChange }) => {
   };
 
   return (
-    <div className="my-2">
-        {/* <h5 className="text-center">Ver como</h5> */}
-      <Form.Range
-        min={1}
-        max={4}
-        value={gridValue}
-        onChange={handleGridChange}
-        style={{ margin: '0 auto', width: '100%' }} // Ajusta el ancho del slider
-      />
+    <div className="selector-grid-container">
+    <Form.Range
+      min={1}
+      max={4}
+      value={gridValue}
+      onChange={handleGridChange}
+      className="custom-range-slider"
+    />
+    <div className="range-indicators">
+      <span className={gridValue === 1 ? 'active' : ''}></span>
+      <span className={gridValue === 2 ? 'active' : ''}></span>
+      <span className={gridValue === 3 ? 'active' : ''}></span>
+      <span className={gridValue === 4 ? 'active' : ''}></span>
     </div>
+  </div>
   );
 };
 
 export default SelectorGrid;
+
+
